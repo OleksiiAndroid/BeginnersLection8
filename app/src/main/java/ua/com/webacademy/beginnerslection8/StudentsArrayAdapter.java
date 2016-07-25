@@ -10,20 +10,21 @@ import android.widget.TextView;
 import java.util.List;
 
 public class StudentsArrayAdapter extends ArrayAdapter<Student> {
-    private final int mResourceId;
-    private final List<Student> mStudents;
+    private int mResourceId;
+    private List<Student> mStudents;
+    private LayoutInflater mInflater;
 
     public StudentsArrayAdapter(Context context, int resource, List<Student> students) {
         super(context, resource, students);
 
         this.mStudents = students;
         this.mResourceId = resource;
+        mInflater = LayoutInflater.from(context);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertView = inflater.inflate(mResourceId, null);
+        convertView = mInflater.inflate(mResourceId, null);
 
         Student student = mStudents.get(position);
 

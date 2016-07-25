@@ -10,14 +10,16 @@ import android.widget.TextView;
 import java.util.List;
 
 public class SpinnerArrayAdapter extends ArrayAdapter<Student> {
-    private final int mResourceId;
-    private final List<Student> mStudents;
+    private int mResourceId;
+    private List<Student> mStudents;
+    private LayoutInflater mInflater;
 
     public SpinnerArrayAdapter(Context context, int resource, List<Student> students) {
         super(context, resource, students);
 
         this.mStudents = students;
         this.mResourceId = resource;
+        mInflater = LayoutInflater.from(context);
     }
 
     @Override
@@ -31,8 +33,7 @@ public class SpinnerArrayAdapter extends ArrayAdapter<Student> {
     }
 
     private View getView(View convertView, int position) {
-        LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertView = inflater.inflate(mResourceId, null);
+        convertView = mInflater.inflate(mResourceId, null);
 
         Student student = mStudents.get(position);
         if (student != null) {
