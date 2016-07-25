@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">BeginnersLection8</string>
+    <string name="title_activity_2">Activity2</string>
+    <string name="title_activity_3">Activity3</string>
+    <string name="title_activity_4">Activity4</string>
+    <string name="title_activity_5">Activity5</string>
+    <string name="title_activity_6">Activity6</string>
+    <string name="title_activity_7">Activity7</string>
+    <string name="title_activity_8">Activity8</string>
+    <string name="title_activity_9">Activity9</string>
+    <string name="title_activity_10">Activity10</string>
+    <string name="title_activity_11">Activity11</string>
+    <string name="title_activity_12">Activity12</string>
+    <string name="title_activity_13">Activity13</string>
 </resources>
