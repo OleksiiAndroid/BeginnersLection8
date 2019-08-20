@@ -2,8 +2,9 @@ package ua.com.webacademy.beginnerslection8;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,15 +18,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = null;
 
         switch (v.getId()) {
-            case R.id.button:
-                intent = new Intent(this, Activity2.class);
-                break;
-            case R.id.button2:
-                intent = new Intent(this, Activity3.class);
-                break;
-            case R.id.button3:
-                intent = new Intent(this, Activity4.class);
-                break;
             case R.id.button4:
                 intent = new Intent(this, Activity5.class);
                 break;
@@ -52,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.button12:
                 intent = new Intent(this, Activity13.class);
+                break;
+            case R.id.button13:
+                intent = new Intent(this, Activity14.class);
                 break;
         }
         startActivity(intent);

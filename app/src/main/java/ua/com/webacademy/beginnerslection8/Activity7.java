@@ -1,8 +1,9 @@
 package ua.com.webacademy.beginnerslection8;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
@@ -17,7 +18,7 @@ public class Activity7 extends AppCompatActivity {
     }
 
     private void SetAdapter() {
-        ListView listView = (ListView) findViewById(R.id.listView);
+        ListView listView = findViewById(R.id.listView);
 
         ArrayList<Student> myArrList = new ArrayList<>();
         myArrList.add(new Student("Ivan", "Ivanov", 22));

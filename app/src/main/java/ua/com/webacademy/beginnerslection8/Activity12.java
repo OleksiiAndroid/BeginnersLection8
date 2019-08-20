@@ -1,10 +1,11 @@
 package ua.com.webacademy.beginnerslection8;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.SimpleAdapter;
 import android.widget.Spinner;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,7 +23,7 @@ public class Activity12 extends AppCompatActivity {
     }
 
     private void SetAdapter1() {
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        Spinner spinner = findViewById(R.id.spinner);
 
         ArrayList<HashMap<String, String>> myArrList = new ArrayList<HashMap<String, String>>();
         HashMap<String, String> map;
@@ -47,7 +48,7 @@ public class Activity12 extends AppCompatActivity {
     }
 
     private void SetAdapter2() {
-        Spinner spinner = (Spinner) findViewById(R.id.spinner2);
+        Spinner spinner = findViewById(R.id.spinner2);
 
         Student[] myArrList = new Student[]{
                 new Student("Ivan", "Ivanov", 22),
@@ -62,7 +63,7 @@ public class Activity12 extends AppCompatActivity {
     }
 
     private void SetAdapter3() {
-        Spinner spinner = (Spinner) findViewById(R.id.spinner3);
+        Spinner spinner = findViewById(R.id.spinner3);
 
         ArrayList<Student> myArrList = new ArrayList<>();
         myArrList.add(new Student("Ivan", "Ivanov", 22));

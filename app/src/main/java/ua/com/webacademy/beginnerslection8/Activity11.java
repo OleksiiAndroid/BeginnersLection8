@@ -1,13 +1,14 @@
 package ua.com.webacademy.beginnerslection8;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.SparseBooleanArray;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Activity11 extends AppCompatActivity {
 
@@ -22,7 +23,7 @@ public class Activity11 extends AppCompatActivity {
     }
 
     private void SetAdapter() {
-        mListView = (ListView) findViewById(R.id.listView);
+        mListView = findViewById(R.id.listView);
         mListView.setChoiceMode(AbsListView.CHOICE_MODE_MULTIPLE);
 
         String[] myArrList = new String[]{"Ivan", "Petro", "Ann"};

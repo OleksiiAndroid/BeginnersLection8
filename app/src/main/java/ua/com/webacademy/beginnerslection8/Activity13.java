@@ -1,11 +1,12 @@
 package ua.com.webacademy.beginnerslection8;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
@@ -20,7 +21,7 @@ public class Activity13 extends AppCompatActivity {
     }
 
     private void SetAdapter() {
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        Spinner spinner = findViewById(R.id.spinner);
 
         ArrayList<Student> myArrList = new ArrayList<>();
         myArrList.add(new Student("Ivan", "Ivanov", 22));
